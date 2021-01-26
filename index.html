@@ -101,7 +101,7 @@
             // updateSpan('currentAmount', depositNumber); //depositNumber is input AmountNumber.
             // updateSpan('totalBalance', depositNumber);
         })
-    
+
         //updateSpan function for add and update the display data.
         function updateSpan(id, depositNumber) {    //passing id and input AmountNumber form line-79.
             const currentAmount = document.getElementById(id).innerText;
@@ -111,8 +111,8 @@
 
         }
 
-         //Withdraw button event handler.
-         const withdrawBtn = document.getElementById('withdrawBtn').addEventListener('click', function(){
+        //Withdraw button event handler.
+        const withdrawBtn = document.getElementById('withdrawBtn').addEventListener('click', function () {
             const amount = document.getElementById('withdrawAmount').value;
             const inputAmount = parseFloat(amount);
             console.log(inputAmount);
@@ -121,7 +121,7 @@
             const withdraw = document.getElementById('totalWithdraw').innerText;
             const withdrawTaka = parseFloat(withdraw);
             const totalWithdrawTaka = inputAmount + withdrawTaka;
-            document.getElementById('totalWithdraw').innerText =totalWithdrawTaka;
+            document.getElementById('totalWithdraw').innerText = totalWithdrawTaka;
 
             //to add input amount with balance amount to display.
             const currentBalance = document.getElementById('totalBalance').innerText;
@@ -130,8 +130,8 @@
             document.getElementById('totalBalance').innerText = newBalance;
 
             document.getElementById("withdrawAmount").value = "";
-        
-         })
+
+        })
 
     </script>
 
